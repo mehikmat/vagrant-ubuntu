@@ -11,7 +11,7 @@ http://releases.ubuntu.com/precise/
 Use "Automated Install using Kickstart"
 https://help.ubuntu.com/12.04/installation-guide/i386/automatic-install.
 Use "Automated Install using Preseed"
-https://help.ubuntu.com/10.04/installation-guide/i386/preseed-using.html
+https://help.ubuntu.com/12.04/installation-guide/amd64/appendix-preseed.html
 
 Run:
     cd PATH_TO/vagrant-ubuntu
