@@ -1,11 +1,11 @@
-NAME=ubuntu1204-x86_64
+NAME=ubuntu1304-x86_64
 TYPE=Ubuntu_64
 INSTALLER_PATH="./isos/"
-INSTALLER_ISO="ubuntu-12.04.4-alternate-amd64.iso"
+INSTALLER_ISO="ubuntu-13.04-server-amd64.iso"
 GUESTADDITIONS_PATH=""
 OS_NAME=`uname`
 IP=''
-UBUNTU_ISO_MD5HASH="46e0fac240154bf59a11426a47a61363"
+UBUNTU_ISO_MD5HASH="7d335ca541fc4945b674459cde7bffb9"
 
 #Determining OS and setting VBoxGuestAdditions default path accordingly
 if [ $OS_NAME=="Linux" ]; then
@@ -33,4 +33,4 @@ fi
 NATNET=10.0.2.0/24
 
 #### ubuntu download url
-UBUNTU_12_04_ALTERNATE_URL=http://releases.ubuntu.com/precise/ubuntu-12.04.4-alternate-amd64.iso
+UBUNTU_13_04_ALTERNATE_URL=http://releases.ubuntu.com/13.04/ubuntu-13.04-server-amd64.iso

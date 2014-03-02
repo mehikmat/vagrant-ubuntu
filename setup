@@ -7,7 +7,7 @@ if [ ! -f "${INSTALLER_PATH}${INSTALLER_ISO}" ] ; then
     if [ ! -d "${INSTALLER_PATH}" ] ; then
         mkdir -p ${INSTALLER_PATH}
     fi
-    curl -Lk ${UBUNTU_12_04_ALTERNATE_URL} -o "${INSTALLER_PATH}${INSTALLER_ISO}"
+    curl -Lk ${UBUNTU_13_04_ALTERNATE_URL} -o "${INSTALLER_PATH}${INSTALLER_ISO}"
 fi
 
 # Check if the VirtualBox Additions ISO is found
@@ -32,9 +32,11 @@ if [ "$OS_NAME" == "Linux" ]; then
         exit 1
     fi
 elif [ "$OS_NAME" == "Darwin" ]; then
+    echo "[Warning]:: No script to check MD5 Hash for $OS_NAME!!! Put script here for $OS_NAME"
     #statements
     #put script for Mac OS X
 else
+    echo "[Warning]:: No script to check MD5 Hash for $OS_NAME Put script here for $OS_NAME"
     #statements
     #put script for other os like Windows
 fi
@@ -127,9 +129,9 @@ if [ ! -d ./boxes ] ; then
 fi
 
 echo 'At the boot prompt, Select Lanuage [or Press Esc] | Hit <F6> | Press Esc | Erase parts "file=/cdrom/preseed/ubuntu.seed vga=788...quite" | and then type:'
-echo "auto url=http://${IP}:8082 locale=en_US keyboard-configuration/layoutcode=us console-setup/ask_detect=false hostname=vagrant-ubuntu1204 domain=vagrant-ubuntu1204.com"
+echo "auto url=http://${IP}:8082 locale=en_US keyboard-configuration/layoutcode=us console-setup/ask_detect=false hostname=vagrant-ubuntu1304 domain=vagrant-ubuntu1304.com"
 echo "When done typing will look like:"
-echo ">Boot Options auto url=http://${IP}:8082  locale=en_US keyboard-configuration/layoutcode=us console-setup/ask_detect=false hostname=vagrant-ubuntu1204 domain=vagrant-ubuntu1204.com initrd=/install/initrd.gz"
+echo ">Boot Options auto url=http://${IP}:8082  locale=en_US keyboard-configuration/layoutcode=us console-setup/ask_detect=false hostname=vagrant-ubuntu1304 domain=vagrant-ubuntu1304.com initrd=/install/initrd.gz"
 #sh ./httpd-kickstart-server.sh | nc -l 8081 >/dev/null &
 sh ./httpd-preseed-server.sh | nc -l 8082 >/dev/null &
 sh ./httpd-late-command-server.sh | nc -l 8083 >/dev/null &

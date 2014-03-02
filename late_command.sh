@@ -34,8 +34,8 @@ echo '#' >/etc/udev/rules.d/75-persistent-net-generator.rules
 
 #### setup DNS records
 cat <<EOM >>/etc/hosts
-127.0.0.1   vagrant-ubuntu1204.com vagrant-ubuntu1204
-::1         vagrant-ubuntu1204.com vagrant-ubuntu1204
+127.0.0.1   vagrant-ubuntu1304.com vagrant-ubuntu1304
+::1         vagrant-ubuntu1304.com vagrant-ubuntu1304
 EOM
 
 #### Install Ansible and dependencies
