@@ -4,14 +4,14 @@ vagrant-ubuntu
 Scripts to create a lean Ubuntu Vagrant box.
 
 http://www.ubuntu.com/download/desktop/install-desktop-long-term-support
-Install Ubuntu 12.04.4 LTS
+Install Ubuntu 13.04 desktop
 Use "Alternate install CD"
-http://releases.ubuntu.com/precise/
+http://releases.ubuntu.com/raring/
 
 Use "Automated Install using Kickstart"
-https://help.ubuntu.com/12.04/installation-guide/i386/automatic-install.
+https://help.ubuntu.com/13.10/installation-guide/index.html
 Use "Automated Install using Preseed"
-https://help.ubuntu.com/10.04/installation-guide/i386/preseed-using.html
+https://help.ubuntu.com/13.10/installation-guide/index.html
 
 Run:
     cd PATH_TO/vagrant-ubuntu
@@ -26,7 +26,7 @@ form `./cleanup && ...`). Congratulations! You have just created a
 Vagrant box.
 
 Your Vagrant box will be saved in a file like:
-    PATH_TO/vagrant-ubuntu/boxes/ubuntu1204-x86_64-20140125.box
+    PATH_TO/vagrant-ubuntu/boxes/ubuntu1304-x86_64-20140125.box
 
 Specification
 -------------
@@ -69,7 +69,7 @@ configuration to best suit your needs. In particular, take note
 of the location of the ISOs (which aren't include in the git
 repository):
 
-    INSTALLER="./isos/ubuntu-12.04.4-alternate-amd64.iso"
+    INSTALLER="./isos/ubuntu-13.04-server-amd64.iso"
     GUESTADDITIONS="./isos/VBoxGuestAdditions-4.3.6.iso"
 
 Assumptions have been made about the location of the hard drive as
