@@ -14,6 +14,7 @@ Use "Alternate install CD"
 
 Use "Automated Install using Kickstart"
 https://help.ubuntu.com/12.04/installation-guide/i386/automatic-install.html
+
 Use "Automated Install using Preseed"
 https://help.ubuntu.com/12.04/installation-guide/amd64/appendix-preseed.html
 
@@ -37,12 +38,7 @@ form `./cleanup && ...`). Congratulations! You have just created a
 Vagrant box.
 
 Your Vagrant box will be saved in a file like:
-<<<<<<< HEAD:README
     PATH_TO/vagrant-ubuntu/boxes/ubuntu1204-x86_64-20140125.box
-=======
-
-    PATH_TO/vagrant-centos/boxes/centos65-x86_64-20140125.box
->>>>>>> 31fc7dbe81ef083476672c0d74764c7993bc906f:README.md
 
 Specification
 -------------
